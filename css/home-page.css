@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Abel', sans-serif;
+}
+
+/*HEADER*/
+
+header {
+    background: url("../images/glasses-cat-matrix.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 800px;
+}
+
+img.nav-logo {
+    width: 300px;
+}
+
+/*blurriness gets removed from images*/
+
+img {
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+}
+
+ul.nav-list {
+    font-size: 1.3em;
+    margin-top: 56px;
+    float: right;
+}
+
+li.nav-item {
+    list-style-type: none;
+    display: inline-block;
+}
