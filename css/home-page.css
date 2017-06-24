@@ -1,6 +1,6 @@
 /* For now animation-type css is mixed in here. I'm too lazy to move it to a different file right now */
 
-@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url(https://fonts.googleapis.com/css?family=Abel);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-size: 50px;
+    font-size: 14px;
     font-family: 'Abel', sans-serif;
 }
 
@@ -26,7 +26,6 @@ img.nav-logo {
     width: 300px;
 }
 
-/* Blurriness gets removed from images */
 nav {
     padding: 20px;
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
@@ -39,10 +38,8 @@ div.nav-wrapper {
 
 }
 
+/* Blurriness gets removed from images */
 img {
-    -webkit-backface-visibility: hidden;
-    -ms-transform: translateZ(0); /* IE 9 */
-    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
     transform: translateZ(0);
 }
 
@@ -98,8 +95,6 @@ li.nav-item:hover i.home-icon {
     padding-left: 7px;
     padding-right: 0;
     transition-delay: 0s;
-    -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
     transform: rotate(180deg);
 }
 
