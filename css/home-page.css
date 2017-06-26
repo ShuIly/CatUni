@@ -149,33 +149,32 @@ article.mission-article {
 
 div.mission-article-wrapper {
     margin: 0 auto;
-    padding: 30px;
     max-width: 400px;
-    min-height: 490px;
+    min-height: 450px;
     border: 1px solid rgb(229, 224, 221);
     background: #FAF9F8;
-    border-radius: 10px;
-}
-
-.first div.mission-image-container {
-    max-width: 400px;
 }
 
 .first img.mission-image {
     max-width: 100%;
-    border-radius: 20px;
+    height: 244px;
 }
 
 article.first .mission-paragraph {
-    max-width: 330px;
+    max-width: 390px;
     font-size: 1.7em;
-    margin-top: 20px;
+    padding: 20px;
     text-align: left;
     vertical-align: top;
 }
 
 a.reddit, a.tumblr, a.catuni {
-    color: #333;
+    color: #B96936;
+    text-decoration: none;
+}
+
+a.reddit:hover, a.tumblr:hover, a.catuni:hover {
+    text-decoration: underline;
 }
 
 /* SECOND ARTICLE */
@@ -183,68 +182,36 @@ article.mission-article.second {
     vertical-align: top;
 }
 .second img.mission-image {
-    border-radius: 20px;
-    margin-bottom: 30px;
     max-width: 100%;
+    height: 244px;
 }
 
 .second p.mission-paragraph {
     font-size: 1.7em;
+    padding: 20px;
     text-align: left;
 }
 
 /* CATUNI MISSION ARTICLE*/
-div.catuni-mission {
-    max-width: 500px;
-    margin: 150px auto;
-    vertical-align: top;
-}
-
-h1.catuni-mission-title {
-    font-size: 2em;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* QUOTE SECTION */
-section.quote-section {
-    padding: 20px;
+article.catuni-mission-article {
     background:
-        linear-gradient(rgba(229, 224, 221, 0.6), rgba(229, 224, 221, 0.6)),
-        url("../images/cat-quote-image.jpg") no-repeat center;
+            linear-gradient(rgba(229, 224, 221, 0.6), rgba(229, 224, 221, 0.6)),
+            url("../images/cat-quote-image.jpg") no-repeat center;
     background-size: cover;
-    text-align: center;
+    margin: 150px auto;
+    padding: 40px;
 }
 
-div.quote-container {
+div.catuni-mission-container {
+    max-width: 500px;
+    vertical-align: top;
     margin: 0 auto;
 }
 
-h2.quote-title {
-    max-width: 300px;
-    font-size: 2em;
-    display: inline-block;
-}
-
-h2.quote-title::before {
-    font-size: 1.1em;
-    content: open-quote;
-}
-
-h2.quote-title::after {
-    font-size: 1.1em;
-    content: close-quote;
-}
-
-p.quote-author {
-    font-size: 1.2em;
-    margin-left: 20px;
-    margin-top: 25px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-p.quote-author::before {
-    content: "\2014";
+h1.catuni-mission-title {
+    font-size: 2.2em;
+    font-weight: normal;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
 }
 
 
