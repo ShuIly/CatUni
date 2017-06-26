@@ -13,22 +13,24 @@ body {
     font-family: 'Abel', sans-serif;
 }
 
-/* HEADER */
-
 header {
     background: url("../images/glasses-cat-matrix.jpg") no-repeat center;
     background-size: cover;
     min-height: 800px;
+    max-width: 100%;
     position: relative;
 }
 
+/* HEADER */
+
 img.nav-logo {
-    width: 300px;
+    max-width: 300px;
 }
 
 nav {
     padding: 20px;
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    background:
+            linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
     overflow: auto;
 }
 
@@ -42,6 +44,8 @@ div.nav-wrapper {
 img {
     transform: translateZ(0);
 }
+
+/* UNORDERED LIST */
 
 /* Here flex is used so there aren't any invisible borders between list items */
 ul.nav-list {
@@ -104,3 +108,143 @@ a.nav-subitem-link {
     text-decoration: none;
     display: block;
 }
+
+/* WELCOME TITLE */
+div.title-container {
+    margin: 230px auto 0;
+    background:
+        linear-gradient(to right, rgba(229, 224, 221, 0.3), rgba(229, 224, 221, 0.6), rgba(229, 224, 221, 0.3));
+}
+
+h1.welcome-title {
+    font-size: 4em;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0 0 30px rgb(229, 224, 221);
+}
+
+h2.welcome-subtitle {
+    font-size: 2.5em;
+    font-weight: 300;
+    text-shadow: 0 0 30px rgb(229, 224, 221);
+    text-align: center;
+}
+
+/* MAIN */
+
+/* MISSION SECTION*/
+section.mission-section {
+    padding-top: 60px;
+    text-align: center;
+}
+
+article.mission-article {
+    display: inline-block;
+}
+
+/* FIRST ARTICLE */
+article.mission-article {
+    padding: 20px;
+}
+
+div.mission-article-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 400px;
+    min-height: 490px;
+    border: 1px solid rgb(229, 224, 221);
+    background: #FAF9F8;
+    border-radius: 10px;
+}
+
+.first div.mission-image-container {
+    max-width: 400px;
+}
+
+.first img.mission-image {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+article.first .mission-paragraph {
+    max-width: 330px;
+    font-size: 1.7em;
+    margin-top: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+a.reddit, a.tumblr, a.catuni {
+    color: #333;
+}
+
+/* SECOND ARTICLE */
+article.mission-article.second {
+    vertical-align: top;
+}
+.second img.mission-image {
+    border-radius: 20px;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+.second p.mission-paragraph {
+    font-size: 1.7em;
+    text-align: left;
+}
+
+/* CATUNI MISSION ARTICLE*/
+div.catuni-mission {
+    max-width: 500px;
+    margin: 150px auto;
+    vertical-align: top;
+}
+
+h1.catuni-mission-title {
+    font-size: 2em;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* QUOTE SECTION */
+section.quote-section {
+    padding: 20px;
+    background:
+        linear-gradient(rgba(229, 224, 221, 0.6), rgba(229, 224, 221, 0.6)),
+        url("../images/cat-quote-image.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+div.quote-container {
+    margin: 0 auto;
+}
+
+h2.quote-title {
+    max-width: 300px;
+    font-size: 2em;
+    display: inline-block;
+}
+
+h2.quote-title::before {
+    font-size: 1.1em;
+    content: open-quote;
+}
+
+h2.quote-title::after {
+    font-size: 1.1em;
+    content: close-quote;
+}
+
+p.quote-author {
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-top: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+p.quote-author::before {
+    content: "\2014";
+}
+
+
