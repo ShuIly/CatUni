@@ -252,6 +252,19 @@ p.services-info {
     text-shadow: 1px 1px 10px rgba(150, 150, 150, 0.8);
 }
 
+a.read-more {
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-right: 10px;
+    opacity: 0;
+    color: #000;
+    position: absolute;
+    right: 10px;
+    bottom: 10%;
+    text-decoration: none;
+    pointer-events: none;
+}
+
 /* FIRST SERVICES ARTICLE */
 article.services-article:first-of-type {
     width: 640px;
@@ -263,10 +276,10 @@ article.services-article:first-of-type {
 }
 
 .services-article:first-of-type div.services-info-container {
-    width: 88%;
+    max-width: 88%;
     padding: 20px;
     position: absolute;
-    top: 58%;
+    bottom: 5%;
 }
 
 /* SECOND SERVICES ARTICLE */
@@ -280,10 +293,10 @@ article.services-article:nth-child(3){
 }
 
 .services-article:nth-child(3) div.services-info-container {
-    width: 82%;
+    max-width: 82%;
     padding: 20px;
     position: absolute;
-    top: 72%;
+    bottom: 5%;
 }
 
 /* THIRD SERVICES ARTICLE */
@@ -299,10 +312,10 @@ article.services-article:nth-child(4){
 }
 
 .services-article:nth-child(4) div.services-info-container {
-    width: 86%;
+    max-width: 86%;
     padding: 20px;
     position: absolute;
-    top: 67%;
+    bottom: 10%;
 }
 
 /* FOURTH SERVICES ARTICLE */
@@ -318,10 +331,10 @@ article.services-article:nth-child(5){
 }
 
 .services-article:nth-child(5) div.services-info-container {
-    width: 82%;
+    max-width: 82%;
     padding: 20px;
     position: absolute;
-    top: 65%;
+    bottom: 5%;
 }
 
 /* FIFTH SERVICES ARTICLE */
@@ -337,10 +350,10 @@ article.services-article:nth-child(6){
 }
 
 .services-article:nth-child(6) div.services-info-container {
-    width: 82%;
+    max-width: 82%;
     padding: 20px;
     position: absolute;
-    top: 59%;
+    bottom: 5%;
 }
 
 /* FIFTH SERVICES ARTICLE */
@@ -356,8 +369,8 @@ article.services-article:nth-child(7){
 }
 
 .services-article:nth-child(7) div.services-info-container {
-    width: 82%;
+    max-width: 82%;
     padding: 20px;
     position: absolute;
-    top: 50%;
+    bottom: 5%;
 }

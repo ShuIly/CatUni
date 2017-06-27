@@ -58,16 +58,43 @@ article.services-article:hover {
     cursor: pointer;
 }
 
-div.services-info-container:hover {
-    animation: read-more-popup .3s ease;
+/* Read more animation */
+a.read-more::after {
+    content: '';
+    background: #000;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 2px;
+    transition: all .3s;
 }
 
-@keyframes read-more-popup {
-    0% {
-        transform: translateZ(30px);
-    }
-    100% {
-        padding-bottom: 100px;
-        bottom: 60%;
-    }
+a.read-more {
+    transition: all .3s .1s ease;
+}
+
+a.read-more:hover::after {
+    width: 30px;
+}
+
+article:hover a.read-more {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Services white box animation */
+div.services-info-container {
+    transition: all .3s .3s;
+}
+
+article:hover div.services-info-container {
+    transition-delay: 0s;
+    transform: translateZ(30px);
+    padding-bottom: 60px !important;
+}
+
+article:hover p.services-info {
+    transform: translateZ(0);
 }
