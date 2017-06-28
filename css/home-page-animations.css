@@ -47,6 +47,20 @@ li.home-item:hover ul.nav-sublist {
     pointer-events: auto;
 }
 
+/* Sublist items transition */
+li.nav-subitem {
+    transition: all .3s ease, background .0s;
+}
+
+li.nav-subitem:hover {
+    font-size: 1.1em;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+li.nav-subitem:hover a.nav-subitem-link {
+    color: #ffffff;
+}
+
 /* Services article transition */
 article.services-article {
     transition: all .3s ease;
@@ -75,13 +89,16 @@ a.read-more {
     transition: all .3s .1s ease;
 }
 
+a.read-more:hover {
+    pointer-events: auto;
+}
+
 a.read-more:hover::after {
     width: 30px;
 }
 
 article:hover a.read-more {
     opacity: 1;
-    pointer-events: auto;
 }
 
 /* Services white box transition */

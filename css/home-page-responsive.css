@@ -1,0 +1,145 @@
+/* For large screens and tablets */
+@media screen and (min-width: 1367px) {
+
+    /* SERVICES SECTION */
+
+    /* FIRST SERVICES ARTICLE */
+    article.services-article:first-of-type {
+        width: 640px;
+        height: 310px;
+        top: 60px;
+    }
+
+    /* SECOND SERVICES ARTICLE */
+    article.services-article:nth-child(3){
+        width: 400px;
+        height: 600px;
+        left: 60px;
+    }
+
+    /* THIRD SERVICES ARTICLE */
+    article.services-article:nth-child(4){
+        width: 500px;
+        height: 500px;
+        bottom: 160px;
+        left: 50px;
+    }
+
+    /* FOURTH SERVICES ARTICLE */
+    article.services-article:nth-child(5){
+        width: 400px;
+        height: 450px;
+        top: 80px;
+        left: 110px;
+    }
+
+    /* FIFTH SERVICES ARTICLE */
+    article.services-article:nth-child(6){
+        width: 400px;
+        height: 450px;
+        bottom: 90px;
+        left: 150px;
+    }
+
+    /* SIXTH SERVICES ARTICLE */
+    article.services-article:nth-child(7){
+        width: 400px;
+        height: 400px;
+        top: 100px;
+        left: 210px;
+    }
+}
+
+/* For medium screens and tablets */
+@media screen and (max-width: 1366px) {
+
+    /* SERVICES SECTION */
+
+    section.services-section {
+        text-align: center;
+    }
+
+    article.services-article {
+        height: 400px;
+        text-align: left;
+        display: inline-block;
+        margin: 20px;
+        width: 40%;
+    }
+
+    div.services-info-container {
+        padding: 20px;
+        position: absolute;
+        font-size: 1.3em;
+    }
+
+}
+
+/* For small screens and tablets */
+@media screen and (max-width: 1024px) {
+
+    /* SERVICES SECTION */
+
+    article.services-article {
+        width: 80%;
+        height: 400px;
+        margin: 60px auto;
+        display: block;
+        background-size: cover;
+    }
+
+    div.services-info-container {
+        font-size: 1.7em;
+    }
+
+    article.services-article:nth-child(4) {
+        background:
+                linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
+                url("../images/home-page/cat-fat-square-tablet.png") no-repeat center;
+    }
+}
+
+/* For medium screen smartphones */
+@media screen and (max-width: 767px) {
+
+    /* SERVICES SECTION */
+
+    article.services-article {
+        width: 80%;
+        height: 300px;
+        margin-top: 60px;
+        display: block;
+        background-size: cover;
+    }
+
+    div.services-info-container {
+        font-size: 1em;
+    }
+}
+
+/* For small screen smartphones */
+@media screen and (max-width: 766px) {
+    article.services-article {
+        width: 80%;
+        height: 300px;
+        margin-top: 60px;
+        display: block;
+        background-size: cover;
+    }
+
+    div.services-info-container {
+        font-size: 0.9em;
+    }
+
+    article.services-article:nth-child(3) {
+        background:
+            linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
+            url("../images/home-page/cat-gray-high-mobile.png") no-repeat center;
+    }
+
+    article.services-article:nth-child(4) {
+        background:
+                linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
+                url("../images/home-page/cat-fat-square-mobile.png") no-repeat center;
+    }
+}
