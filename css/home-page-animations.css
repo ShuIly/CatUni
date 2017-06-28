@@ -98,3 +98,18 @@ article:hover div.services-info-container {
 article:hover p.services-info {
     transform: translateZ(0);
 }
+
+/* Apply now button animation */
+button.apply-btn {
+    transition: all .3s;
+}
+
+button.apply-btn:hover {
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border: 1px solid #000;
+    box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 25px;
+}
