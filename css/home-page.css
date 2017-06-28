@@ -23,13 +23,13 @@ img {
 header {
     background: url("../images/home-page/glasses-cat-matrix.jpg") no-repeat center;
     background-size: cover;
-    min-height: 800px;
-    max-width: 100%;
+    height: 100vh;
+    max-height: 800px;
     position: relative;
 }
 
 div.logo-wrapper {
-    max-width: 300px;
+    width: 260px;
     display: inline-block;
 }
 
@@ -38,7 +38,7 @@ img.nav-logo {
 }
 
 nav {
-    padding: 20px;
+    padding: 5px 10px;
     background:
             linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
     overflow: auto;
@@ -47,7 +47,12 @@ nav {
 div.nav-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+}
 
+/* Icon for menu on mobile */
+i.icon {
+    font-size: 2em;
+    line-height: 120px;
 }
 
 /* UNORDERED LIST */
@@ -91,7 +96,7 @@ li.home-item:hover::after {
 ul.nav-sublist {
     padding: 40px 0;
     opacity: 0;
-    background-color: rgba(239, 239, 239, .85);
+    background-color: rgba(239, 239, 239, 0.9);
     box-shadow: 0 0 84px rgba(0, 0, 0, .24);
     position: absolute;
     margin-top: 60px;
@@ -115,9 +120,11 @@ a.nav-subitem-link {
 
 /* WELCOME TITLE */
 div.title-container {
-    margin: 230px auto 0;
+    margin: 100px auto;
     background:
-        linear-gradient(to right, rgba(229, 224, 221, 0.3), rgba(229, 224, 221, 0.6), rgba(229, 224, 221, 0.3));
+        linear-gradient(to right, rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+
 }
 
 h1.welcome-title {
@@ -207,13 +214,13 @@ article.catuni-mission-article {
 }
 
 div.catuni-mission-container {
-    max-width: 500px;
+    max-width: 650px;
     vertical-align: top;
     margin: 0 auto;
 }
 
 h1.catuni-mission-title {
-    font-size: 2.2em;
+    font-size: 2.9em;
     font-weight: normal;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
 }
@@ -463,19 +470,22 @@ p.copyright::before {
 ul.footer-list {
     margin-right: 10px;
     float: right;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 li.footer-list-item {
+    margin: 10px;
     list-style-type: none;
+    display: inline-block;
+}
+
+a.footer-item-link {
+    width: 49px;
+    display: block;
 }
 
 div.social-media-icon {
     width: 49px;
     height: 49px;
-    margin: 10px;
     border-radius: 10px;
 }
 

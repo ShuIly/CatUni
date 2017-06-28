@@ -54,7 +54,7 @@ li.nav-subitem {
 
 li.nav-subitem:hover {
     font-size: 1.1em;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 li.nav-subitem:hover a.nav-subitem-link {
