@@ -455,7 +455,7 @@ div.apply-info-container::after {
     background-size: contain;
     position: absolute;
     left: 484px;
-    top: 180px;
+    top: 179px;
     content: '';
 }
 
@@ -486,25 +486,83 @@ img.apply-image {
 
 /* FOOTER */
 
+footer {
+    background: #333;
+    overflow: auto;
+    color: #fff;
+}
+
 div.footer-wrapper {
     width: 1200px;
     margin: 0 auto;
 }
 
 p.copyright {
+    font-size: 2em;
     display: inline-block;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+p.copyright::before {
+    content: '\00a9';
+    padding-right: 10px;
 }
 
 ul.footer-list {
     float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 li.footer-list-item {
-    display: inline-block;
     list-style-type: none;
 }
 
 div.social-media-icon {
-    width: 50px;
-    height: 50px;
+    width: 49px;
+    height: 49px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+div.facebook-icon {
+    background: url("../images/home-page/footer-sprites.jpg") 0 50px;
+}
+
+div.facebook-icon:hover {
+    background: url("../images/home-page/footer-sprites.jpg") 0 0;
+}
+
+div.twitter-icon {
+    background: url("../images/home-page/footer-sprites.jpg") 300px 50px;
+}
+
+div.twitter-icon:hover {
+    background: url("../images/home-page/footer-sprites.jpg") 300px 0;
+}
+
+div.linkedin-icon {
+    background: url("../images/home-page/footer-sprites.jpg") 150px 50px;
+}
+
+div.linkedin-icon:hover {
+    background: url("../images/home-page/footer-sprites.jpg") 150px 0;
+}
+
+div.tumblr-icon {
+     background: url("../images/home-page/footer-sprites.jpg") 100px 50px;
+}
+
+div.tumblr-icon:hover {
+    background: url("../images/home-page/footer-sprites.jpg") 100px 0;
+}
+
+div.google-icon {
+    background: url("../images/home-page/footer-sprites.jpg") 50px 50px;
+}
+
+div.google-icon:hover {
+    background: url("../images/home-page/footer-sprites.jpg") 50px 0;
 }

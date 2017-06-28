@@ -1,9 +1,9 @@
-/* Link border animation */
+/* Link border transition */
 a.nav-item-link {
     transition: all .3s;
 }
 
-/* Border and color animation */
+/* Border and color transition */
 li.nav-item > .nav-item-link::after {
     content: '';
     position: absolute;
@@ -47,7 +47,7 @@ li.home-item:hover ul.nav-sublist {
     pointer-events: auto;
 }
 
-/* Services article animation */
+/* Services article transition */
 article.services-article {
     transition: all .3s ease;
     perspective: 1000px;
@@ -58,7 +58,7 @@ article.services-article:hover {
     cursor: pointer;
 }
 
-/* Read more animation */
+/* Read more transition */
 a.read-more::after {
     content: '';
     background: #000;
@@ -84,7 +84,7 @@ article:hover a.read-more {
     pointer-events: auto;
 }
 
-/* Services white box animation */
+/* Services white box transition */
 div.services-info-container {
     transition: all .3s .3s;
 }
@@ -99,7 +99,7 @@ article:hover p.services-info {
     transform: translateZ(0);
 }
 
-/* Apply now button animation */
+/* Apply now button transition */
 button.apply-btn {
     transition: all .3s;
 }
@@ -112,4 +112,9 @@ button.apply-btn:hover {
     box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border-radius: 25px;
+}
+
+/* Footer icon transition */
+div.social-media-icon {
+    transition: all .4s;
 }
