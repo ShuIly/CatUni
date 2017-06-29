@@ -65,6 +65,13 @@
         display: none;
     }
 
+    /* MISSION SECTION */
+
+    article.mission-article {
+        display: inline-block;
+        width: 30%;
+    }
+
     /* SERVICES SECTION */
 
     section.services-section {
@@ -148,7 +155,7 @@
     /* MISSION SECTION */
 
     article.mission-article {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         display: block;
     }
@@ -212,6 +219,12 @@
         margin-top: 60px;
         display: block;
         background-size: cover;
+    }
+
+    /* MISSION SECTION */
+
+    article.mission-article {
+        width: 90%;
     }
 
     /* SERVICES SECTION */

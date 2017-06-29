@@ -120,7 +120,7 @@ a.nav-subitem-link {
 
 /* Welcome title */
 div.title-container {
-    margin: 100px auto;
+    margin: 200px auto;
     background:
         linear-gradient(to right, rgba(255, 255, 255, 0.3),
         rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
@@ -150,7 +150,11 @@ section.mission-section {
     text-align: center;
 }
 
-/* FIRST ARTICLE */
+div.mission-article-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 article.mission-article {
     margin: 0 auto;
     padding: 20px;
@@ -158,6 +162,7 @@ article.mission-article {
 
 img.mission-image {
     width: 100%;
+    border-radius: 10px;
 }
 
 p.mission-paragraph {
@@ -177,7 +182,6 @@ a.reddit:hover, a.tumblr:hover, a.catuni:hover {
     text-decoration: underline;
 }
 
-/* SECOND ARTICLE */
 article.mission-article.second {
     vertical-align: top;
 }
