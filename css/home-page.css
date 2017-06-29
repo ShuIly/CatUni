@@ -118,7 +118,7 @@ a.nav-subitem-link {
     display: block;
 }
 
-/* WELCOME TITLE */
+/* Welcome title */
 div.title-container {
     margin: 100px auto;
     background:
@@ -144,6 +144,7 @@ h2.welcome-subtitle {
 /* MAIN */
 
 /* MISSION SECTION*/
+
 section.mission-section {
     padding-top: 60px;
     text-align: center;

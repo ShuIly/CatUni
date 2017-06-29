@@ -89,16 +89,13 @@ a.read-more {
     transition: all .3s .1s ease;
 }
 
-a.read-more:hover {
-    pointer-events: auto;
-}
-
 a.read-more:hover::after {
     width: 30px;
 }
 
 article:hover a.read-more {
     opacity: 1;
+    pointer-events: auto;
 }
 
 /* Services white box transition */
@@ -109,7 +106,7 @@ div.services-info-container {
 article:hover div.services-info-container {
     transition-delay: 0s;
     transform: translateZ(30px);
-    padding-bottom: 60px !important;
+    padding-bottom: 80px !important;
 }
 
 article:hover p.services-info {

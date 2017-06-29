@@ -1,5 +1,5 @@
 /* For large screens and tablets */
-@media screen and (min-width: 1367px) {
+@media screen and (min-width: 1260px) {
 
     i.icon {
         display: none;
@@ -55,7 +55,7 @@
 }
 
 /* For medium screens and tablets */
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1259px) {
 
     /* HEADER */
 
@@ -79,10 +79,16 @@
         width: 40%;
     }
 
-    div.services-info-container {
-        padding: 20px;
-        position: absolute;
-        font-size: 1.3em;
+    article.services-article:nth-child(3) {
+        background:
+                linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
+                url("../images/home-page/cat-gray-high-mobile.png") no-repeat center;
+    }
+
+    article.services-article:nth-child(4) {
+        background:
+                linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
+                url("../images/home-page/cat-fat-square-mobile.png") no-repeat center;
     }
 
 }
@@ -104,48 +110,30 @@
         height: 50px;
         float: right;
     }
-
-    /* SERVICES SECTION */
-
-    article.services-article {
-        width: 80%;
-        height: 400px;
-        margin: 60px auto;
-        display: block;
-        background-size: cover;
-    }
-
-    div.services-info-container {
-        font-size: 1.7em;
-    }
-
-    article.services-article:nth-child(4) {
-        background:
-                linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
-                url("../images/home-page/cat-fat-square-tablet.png") no-repeat center;
-    }
 }
 
 /* For medium screen smartphones */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
 
     /* SERVICES SECTION */
 
     article.services-article {
         width: 80%;
         height: 300px;
-        margin-top: 60px;
+        margin: 60px auto;
         display: block;
         background-size: cover;
-    }
-
-    div.services-info-container {
-        font-size: 1em;
     }
 }
 
 /* For small screen smartphones */
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 600px) {
+
+    /* BODY */
+
+    body {
+        font-size: 11px;
+    }
 
     /* HEADER */
 
@@ -158,38 +146,11 @@
         margin-right: 10px;
     }
 
-    h1.welcome-title {
-        font-size: 2.8em;
-    }
-
-    h2.welcome-subtitle {
-        font-size: 1.5em;
-    }
-
-    /* SERVICES SECTION */
-
-
     article.services-article {
         width: 80%;
         height: 300px;
         margin-top: 60px;
         display: block;
         background-size: cover;
-    }
-
-    div.services-info-container {
-        font-size: 0.9em;
-    }
-
-    article.services-article:nth-child(3) {
-        background:
-            linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
-            url("../images/home-page/cat-gray-high-mobile.png") no-repeat center;
-    }
-
-    article.services-article:nth-child(4) {
-        background:
-                linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
-                url("../images/home-page/cat-fat-square-mobile.png") no-repeat center;
     }
 }
