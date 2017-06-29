@@ -52,7 +52,12 @@ div.nav-wrapper {
 /* Icon for menu on mobile */
 i.icon {
     font-size: 2em;
-    line-height: 120px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+i.icon::before {
+    content: "\f0c9";
 }
 
 /* UNORDERED LIST */
@@ -121,10 +126,6 @@ a.nav-subitem-link {
 /* Welcome title */
 div.title-container {
     margin: 200px auto;
-    background:
-        linear-gradient(to right, rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
-
 }
 
 h1.welcome-title {
