@@ -150,31 +150,19 @@ section.mission-section {
     text-align: center;
 }
 
-article.mission-article {
-    display: inline-block;
-}
-
 /* FIRST ARTICLE */
 article.mission-article {
+    margin: 0 auto;
     padding: 20px;
 }
 
-div.mission-article-wrapper {
-    margin: 0 auto;
-    max-width: 400px;
-    min-height: 450px;
-    border: 1px solid rgb(229, 224, 221);
-    background: #F9F9F9;
+img.mission-image {
+    width: 100%;
 }
 
-.first img.mission-image {
-    max-width: 100%;
-    height: 244px;
-}
-
-article.first .mission-paragraph {
-    max-width: 390px;
+p.mission-paragraph {
     font-size: 1.7em;
+    margin: 0 auto;
     padding: 20px;
     text-align: left;
     vertical-align: top;
@@ -192,16 +180,6 @@ a.reddit:hover, a.tumblr:hover, a.catuni:hover {
 /* SECOND ARTICLE */
 article.mission-article.second {
     vertical-align: top;
-}
-.second img.mission-image {
-    max-width: 100%;
-    height: 244px;
-}
-
-.second p.mission-paragraph {
-    font-size: 1.7em;
-    padding: 20px;
-    text-align: left;
 }
 
 /* CATUNI MISSION ARTICLE*/
@@ -344,13 +322,12 @@ article.testimonials-article {
 
 div.testimonials-wrapper {
     max-width: 1200px;
-    min-height: 800px;
+    min-height: inherit;
     margin: 0 auto;
     position: relative;
 }
 
 div.quote-container {
-    max-width: 270px;
     height: 120px;
     padding: 80px 80px 60px;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
@@ -376,7 +353,6 @@ p.testimonials-quote {
 
 div.testimonials-author {
     font-size: 1.3em;
-    float: right;
     margin-top: 30px;
 }
 
@@ -387,7 +363,7 @@ div.testimonials-author::before {
 /* APPLY SECTION */
 
 section.apply-section {
-    padding-top: 200px;
+    padding-top: 20%;
     background: linear-gradient(rgba(229, 224, 221, 0.1), rgba(229, 224, 221, 0.5));
     overflow: auto;
 }
@@ -400,21 +376,10 @@ div.apply-container {
 }
 
 div.apply-info-container {
-    position: absolute;
-    top: 30px;
+    box-sizing: border-box;
+    text-align: center;
     padding: 40px;
     border: 2px solid #333;
-}
-
-div.apply-info-container::after {
-    width: 48px;
-    height: 52px;
-    background: url("../images/home-page/conversation-pointer.png") no-repeat center;
-    background-size: contain;
-    position: absolute;
-    left: 484px;
-    top: 179px;
-    content: '';
 }
 
 h1.apply-title {

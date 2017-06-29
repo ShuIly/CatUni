@@ -105,15 +105,53 @@
     }
 
     i.icon {
-        display: block;
         width: 50px;
+        margin-right: 30px;
         height: 50px;
         float: right;
+        display: block;
+    }
+}
+
+/* Only for screens larger than 1023px */
+@media screen and (min-width: 1024px) {
+
+    /* MISSION SECTION */
+
+    article.mission-article {
+        display: inline-block;
+        width: 40%;
+    }
+
+    /*APPLY SECTION*/
+
+    div.apply-info-container {
+        position: absolute;
+        top: 30px;
+    }
+
+    div.apply-info-container::after {
+        width: 48px;
+        height: 52px;
+        background: url("../images/home-page/conversation-pointer.png") no-repeat center;
+        background-size: contain;
+        position: absolute;
+        left: 483px;
+        top: 179px;
+        content: '';
     }
 }
 
 /* For medium screen smartphones */
 @media screen and (max-width: 1023px) {
+
+    /* MISSION SECTION */
+
+    article.mission-article {
+        width: 90%;
+        display: block;
+    }
+
 
     /* SERVICES SECTION */
 
@@ -124,6 +162,27 @@
         display: block;
         background-size: cover;
     }
+
+    /* APPLY SECTION */
+
+    div.apply-info-container {
+        width: 80%;
+        margin: 0 auto 60px;
+        position: relative;
+    }
+
+    div.apply-info-container::after {
+        width: 48px;
+        height: 52px;
+        background: url("../images/home-page/conversation-pointer.png") no-repeat center;
+        background-size: contain;
+        position: absolute;
+        left: 69%;
+        top: 97%;
+        content: '';
+        transform: rotate(90deg);
+    }
+
 }
 
 /* For small screen smartphones */
@@ -142,8 +201,8 @@
     }
 
     i.icon {
-        line-height: 90px;
         margin-right: 10px;
+        line-height: 90px;
     }
 
     article.services-article {
@@ -152,5 +211,45 @@
         margin-top: 60px;
         display: block;
         background-size: cover;
+    }
+
+    /* SERVICES SECTION */
+
+    h1.services-section-title {
+        width: 80%;
+        margin: 100px auto;
+        text-align: center;
+    }
+
+
+    /* TESTIMONIALS SECTION */
+
+    article.testimonials-article {
+        background:
+                linear-gradient(rgba(229, 224, 221, 0.1), rgba(229, 224, 221, 0.3)),
+                url("../images/home-page/orange-cat-testimony-mobile.png") no-repeat center;
+        background-size: cover;
+    }
+
+    article.testimonials-article {
+        min-height: 600px;
+    }
+
+    div.quote-container {
+        margin: 0 20px 20px;
+        top: auto;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+    }
+
+    p.testimonials-quote {
+        box-sizing: border-box;
+    }
+
+    /* FOOTER */
+
+    ul.footer-list {
+        display: none;
     }
 }
