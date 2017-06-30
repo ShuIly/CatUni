@@ -1,7 +1,7 @@
 /* NAV animation */
 
 nav {
-    transition: all .5s ease;
+    transition: all .6s ease;
 }
 
 /* Link border transition */
@@ -32,7 +32,7 @@ i.home-icon {
 }
 
 ul.nav-list {
-    transition: all .3s ease;
+    transition: all .3s .1s ease;
 }
 
 
@@ -114,8 +114,7 @@ div.services-info-container {
 
 article:hover div.services-info-container {
     transition-delay: 0s;
-    transform: translateZ(30px);
-    padding-bottom: 80px !important;
+    padding-bottom: 80px;
 }
 
 article:hover p.services-info {
