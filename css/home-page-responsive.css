@@ -100,6 +100,15 @@
 
 }
 
+@media screen and (min-width: 1025px) {
+
+    /* NAV */
+
+    ul.nav-sublist {
+        position: absolute;
+    }
+}
+
 /* For small screens and tablets */
 @media screen and (max-width: 1024px) {
 
@@ -108,11 +117,26 @@
     /* NAV */
 
     ul.nav-list {
-        display: none;
+        width: 100%;
+        font-size: 2em;
+        padding-top: 20px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    ul.nav-list li.nav-item {
+        width: 100%;
+        display: block;
+    }
+
+    ul.nav-list.switch-mobile {
+        opacity: 1;
+        display: block;
+        pointer-events: auto;
     }
 
     div.icon-list-wrapper {
-        margin-right: 20px;
+        margin-right: 30px;
         margin-top: 32px;
     }
 
@@ -197,6 +221,12 @@
 /* For small screen smartphones */
 @media screen and (max-width: 600px) {
 
+    /* NAV */
+
+    nav {
+        height: 79px;
+    }
+
     /* BODY */
 
     body {
@@ -266,4 +296,14 @@
     ul.footer-list {
         display: none;
     }
+}
+
+@media screen and (min-width: 600px) {
+
+    /* NAV */
+
+    nav {
+        height: 100px;
+    }
+
 }

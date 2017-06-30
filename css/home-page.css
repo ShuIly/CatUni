@@ -39,6 +39,11 @@ nav {
     z-index: 999;
 }
 
+.nav-stretch {
+    height: 100vh;
+    box-shadow: none;
+}
+
 div.nav-wrapper {
     display: flex;
     flex-flow: wrap row;
@@ -60,6 +65,7 @@ img.nav-logo {
 /* Here flex is used so there aren't any invisible borders between list items */
 ul.nav-list {
     margin-top: 30px;
+    margin-right: 20px;
     font-size: 1.5em;
     display: flex;
     flex-direction: row;
@@ -69,6 +75,11 @@ ul.nav-list {
 li.nav-item {
     list-style-type: none;
     display: inline-block;
+}
+
+li.home-item {
+    cursor: pointer;
+    outline: none;
 }
 
 a.nav-item-link {
@@ -96,14 +107,12 @@ li.home-item:hover::after {
 ul.nav-sublist {
     padding: 40px 0;
     opacity: 0;
+    margin-top: 60px;
     background-color: rgba(239, 239, 239, 0.9);
     box-shadow: 0 0 84px rgba(0, 0, 0, .24);
-    position: absolute;
-    margin-top: 60px;
-    pointer-events: none;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: wrap column;
+    pointer-events: none;
 }
 
 li.nav-subitem {
@@ -118,11 +127,11 @@ a.nav-subitem-link {
     display: block;
 }
 
-/* Icon for menu on mobile */
+/* Menu for mobile */
 
 div.icon-list-wrapper {
-    margin-right: 20px;
-    margin-bottom: 10px;
+    width: 30px;
+    height: 35px;
     padding: 10px;
     cursor: pointer;
 }
