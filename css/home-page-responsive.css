@@ -114,15 +114,8 @@
     i.icon {
         margin-right: 20px;
         margin-top: 32px;
-        float: right;
         display: block;
     }
-}
-
-div.title-container {
-    background:
-            linear-gradient(to right, rgba(255, 255, 255, 0.3),
-            rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
 }
 
 /* Only for screens larger than 1023px */
@@ -156,12 +149,6 @@ div.title-container {
 
 /* For medium screen smartphones */
 @media screen and (max-width: 1023px) {
-
-    /* HEADER */
-
-    div.title-container {
-        background: rgba(255, 255, 255, 0.6);
-    }
 
     /* MISSION SECTION */
 
@@ -220,7 +207,6 @@ div.title-container {
     }
 
     i.icon {
-        margin-right: 10px;
         margin-top: 22px;
     }
 

@@ -21,11 +21,30 @@ img {
 /* HEADER */
 
 header {
+    padding-top: 40vh;
+    height: 60vh;
+    max-height: 800px;
     background: url("../images/home-page/glasses-cat-matrix.jpg") no-repeat center;
     background-size: cover;
-    height: 100vh;
-    max-height: 800px;
     position: relative;
+}
+
+nav {
+    width: 100%;
+    padding: 5px 10px 10px;
+    background: rgba(239, 239, 239, 0.96);
+    box-shadow: 0 0 44px rgba(0, 0, 0, .24);
+    opacity: 1;
+    position: fixed;
+    z-index: 999;
+}
+
+div.nav-wrapper {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 div.logo-wrapper {
@@ -37,35 +56,11 @@ img.nav-logo {
     max-width: 100%;
 }
 
-nav {
-    padding: 5px 10px;
-    background:
-            linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
-    overflow: auto;
-}
-
-div.nav-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Icon for menu on mobile */
-i.icon {
-    font-size: 2em;
-    cursor: pointer;
-    padding: 10px;
-}
-
-i.icon::before {
-    content: "\f0c9";
-}
-
 /* UNORDERED LIST */
 /* Here flex is used so there aren't any invisible borders between list items */
 ul.nav-list {
     margin-top: 30px;
     font-size: 1.5em;
-    float: right;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -123,14 +118,28 @@ a.nav-subitem-link {
     display: block;
 }
 
+/* Icon for menu on mobile */
+i.icon {
+    font-size: 2.5em;
+    margin-right: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i.icon::before {
+    content: "\f0c9";
+}
+
 /* Welcome title */
 div.title-container {
+    background:
+        linear-gradient(to right, rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
     text-align: center;
 }
 
 h1.welcome-title {
     font-size: 4em;
-    margin: 200px auto 0;
     font-weight: 300;
     text-shadow: 0 0 30px rgb(229, 224, 221);
 }
@@ -162,13 +171,11 @@ article.mission-article {
 
 img.mission-image {
     width: 100%;
-    border-radius: 10px;
 }
 
 p.mission-paragraph {
     font-size: 1.7em;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 20px auto 0;
     text-align: left;
     vertical-align: top;
 }
