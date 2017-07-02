@@ -111,6 +111,7 @@ ul.nav-sublist {
     background-color: rgba(239, 239, 239, 0.9);
     box-shadow: 0 0 84px rgba(0, 0, 0, .24);
     pointer-events: none;
+    position: absolute;
 }
 
 li.nav-subitem {
@@ -136,6 +137,7 @@ div.icon-list-wrapper {
 
 i.icon {
     font-size: 2.5em;
+    display: none;
 }
 
 i.icon::before {
@@ -326,6 +328,54 @@ article.services-article:nth-child(7){
         linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
         url("../images/home-page/cat-orange-square.png") no-repeat center;
     background-size: contain;
+}
+
+/* SERVICES SECTION */
+
+/* FIRST SERVICES ARTICLE */
+article.services-article:first-of-type {
+    width: 640px;
+    height: 310px;
+    top: 60px;
+}
+
+/* SECOND SERVICES ARTICLE */
+article.services-article:nth-child(3){
+    width: 400px;
+    height: 600px;
+    left: 60px;
+}
+
+/* THIRD SERVICES ARTICLE */
+article.services-article:nth-child(4){
+    width: 500px;
+    height: 500px;
+    bottom: 160px;
+    left: 50px;
+}
+
+/* FOURTH SERVICES ARTICLE */
+article.services-article:nth-child(5){
+    width: 400px;
+    height: 450px;
+    top: 80px;
+    left: 110px;
+}
+
+/* FIFTH SERVICES ARTICLE */
+article.services-article:nth-child(6){
+    width: 400px;
+    height: 450px;
+    bottom: 90px;
+    left: 150px;
+}
+
+/* SIXTH SERVICES ARTICLE */
+article.services-article:nth-child(7){
+    width: 400px;
+    height: 400px;
+    top: 100px;
+    left: 210px;
 }
 
 /* TESTIMONIALS SECTION */
