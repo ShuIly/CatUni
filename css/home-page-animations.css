@@ -5,12 +5,12 @@ nav {
 }
 
 /* Link border transition */
-a.nav-item-link {
+.nav-item-link {
     transition: all .3s;
 }
 
 /* Border and color transition */
-li.nav-item > .nav-item-link::after {
+.nav-item > .nav-item-link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -23,21 +23,21 @@ li.nav-item > .nav-item-link::after {
     transition: all .3s;
 }
 
-a.nav-item-link:hover::after {
+.nav-item-link:hover::after {
     width: 100%;
 }
 
-i.home-icon {
+.home-icon {
     transition: 0.3s 0.5s;
 }
 
-ul.nav-list {
+.nav-list {
     transition: all .3s .1s ease;
 }
 
 
 /* Home icon rotate when hovered */
-li.nav-item:hover i.home-icon {
+.nav-item:hover .home-icon {
     padding-left: 7px;
     padding-right: 0;
     transition-delay: 0s;
@@ -45,11 +45,11 @@ li.nav-item:hover i.home-icon {
 }
 
 /* Sublist transition */
-ul.nav-sublist {
+.nav-sublist {
     transition: 0.5s 0.5s;
 }
 
-li.home-item:hover ul.nav-sublist {
+.home-item:hover .nav-sublist {
     margin-top: 40px;
     opacity: 1;
     transition-delay: 0s;
@@ -57,32 +57,32 @@ li.home-item:hover ul.nav-sublist {
 }
 
 /* Sublist items transition */
-li.nav-subitem {
+.nav-subitem {
     transition: all .3s ease, background .0s;
 }
 
-li.nav-subitem:hover {
+.nav-subitem:hover {
     font-size: 1.1em;
     background: rgba(0, 0, 0, 0.7);
 }
 
-li.nav-subitem:hover a.nav-subitem-link {
+.nav-subitem:hover .nav-subitem-link {
     color: #ffffff;
 }
 
 /* Services article transition */
-article.services-article {
+.services-article {
     transition: all .3s ease;
     perspective: 1000px;
 }
 
-article.services-article:hover {
+.services-article:hover {
     transform-style: preserve-3d;
     cursor: pointer;
 }
 
 /* Read more transition */
-a.read-more::after {
+.read-more::after {
     content: '';
     background: #000;
     position: relative;
@@ -94,39 +94,39 @@ a.read-more::after {
     transition: all .3s;
 }
 
-a.read-more {
+.read-more {
     transition: all .3s .1s ease;
 }
 
-a.read-more:hover::after {
+.read-more:hover::after {
     width: 30px;
 }
 
-article:hover a.read-more {
+.services-article:hover .read-more {
     opacity: 1;
     pointer-events: auto;
 }
 
 /* Services white box transition */
-div.services-info-container {
+.services-info-container {
     transition: all .3s .3s;
 }
 
-article:hover div.services-info-container {
+.services-article:hover .services-info-container {
     transition-delay: 0s;
     padding-bottom: 80px;
 }
 
-article:hover p.services-info {
+.services-article:hover .services-info {
     transform: translateZ(0);
 }
 
 /* Apply now button transition */
-button.apply-btn {
+.apply-btn {
     transition: all .3s;
 }
 
-button.apply-btn:hover {
+.apply-btn:hover {
     background: #333;
     color: #fff;
     padding: 12px 24px;
@@ -137,6 +137,6 @@ button.apply-btn:hover {
 }
 
 /* Footer icon transition */
-div.social-media-icon {
+.social-media-icon {
     transition: all .4s;
 }
