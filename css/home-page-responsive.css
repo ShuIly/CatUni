@@ -7,6 +7,23 @@
         height: 110px;
         box-shadow: 0 0 44px rgba(0, 0, 0, .24);
     }
+
+
+    /* Sublist becomes visible on hover. Else it toggles on click */
+    .home-item:hover .nav-sublist {
+        margin-top: 40px;
+        opacity: 1;
+        transition-delay: 0s;
+        pointer-events: auto;
+    }
+
+    /* Home icon rotate when hovered (not for mobile) */
+    .nav-item:hover .home-icon {
+        padding-left: 7px;
+        padding-right: 0;
+        transition-delay: 0s;
+        transform: rotate(180deg);
+    }
 }
 
 /* For medium screens and tablets */
@@ -76,12 +93,37 @@
         display: block;
     }
 
+    .nav-stretch {
+        height: 100vh;
+        box-shadow: none;
+    }
+
     .switch-mobile {
         opacity: 1;
         height: auto;
         display: block;
         pointer-events: auto;
         font-size: 2.5em;
+    }
+
+    .mobile-link-hovered {
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+    }
+
+    .mobile-icon-rotate {
+        padding-left: 7px;
+        padding-right: 0;
+        transition-delay: 0s;
+        transform: rotate(180deg);
+    }
+
+    .nav-sublist.toggle-sublist {
+        max-height: 190px;
+        opacity: 1;
+        transition-delay: 0s;
+        pointer-events: auto;
+        background: linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2));
     }
 
     .nav-sublist {
@@ -92,11 +134,6 @@
         background: inherit;
         box-shadow: none;
         position: relative;
-    }
-
-    .home-item:hover .nav-sublist {
-        margin: 0 auto;
-        max-height: 190px;
     }
 
     .nav-item > .nav-item-link::after {
@@ -136,15 +173,6 @@
 
     .home-icon {
         transition: all 0.3s, color 0.3s;
-    }
-
-    .home-item:hover .nav-sublist {
-        background: linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2));
-    }
-
-    .nav-item-link:hover {
-        background: rgba(0, 0, 0, 0.7);
-        color: #fff;
     }
 
     /* SERVICES SECTION */

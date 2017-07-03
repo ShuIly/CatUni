@@ -40,11 +40,6 @@ nav {
     position: fixed;
 }
 
-.nav-stretch {
-    height: 100vh;
-    box-shadow: none;
-}
-
 .nav-wrapper {
     max-width: 1200px;
     margin: 0 auto;
