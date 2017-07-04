@@ -98,4 +98,9 @@ footer {
     .footer-list {
         display: none;
     }
+
+    .copyright {
+        font-size: 1.5em;
+        line-height: 40px;
+    }
 }

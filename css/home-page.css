@@ -1,6 +1,7 @@
 /* For now animation-type css is mixed in here. I'm too lazy to move it to a different file right now */
 
 @import url(https://fonts.googleapis.com/css?family=Abel);
+@import url('https://fonts.googleapis.com/css?family=Ewert');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 * {
@@ -21,12 +22,14 @@ img {
 /* HEADER */
 
 header {
-    padding-top: 40vh;
-    height: 60vh;
+    height: 100vh;
     max-height: 800px;
     background: url("../images/home-page/glasses-cat-matrix.jpg") no-repeat center;
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Welcome title */
@@ -38,6 +41,7 @@ header {
 }
 
 .welcome-title {
+    font-family: 'Ewert', 'Abel', sans-serif;
     font-size: 4em;
     font-weight: 300;
     text-shadow: 0 0 30px rgb(229, 224, 221);
@@ -294,7 +298,7 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
 /* APPLY SECTION */
 
 .apply-section {
-    padding-top: 20%;
+    padding-top: 15em;
     background: linear-gradient(rgba(229, 224, 221, 0.1), rgba(229, 224, 221, 0.5));
     overflow: auto;
 }
