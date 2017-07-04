@@ -204,7 +204,7 @@
     .apply-info-container::after {
         content: '';
         left: 69%;
-        top: 97%;
+        top: 96%;
         transform: rotate(90deg);
     }
 }
