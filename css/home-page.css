@@ -31,8 +31,7 @@ header {
 
 nav {
     width: 100%;
-    height: 110px;
-    padding: 5px 10px 10px;
+    height: 100px;
     background: rgba(239, 239, 239, 0.96);
     box-shadow: 0 0 44px rgba(0, 0, 0, .24);
     opacity: 1;
@@ -60,7 +59,7 @@ nav {
 /* UNORDERED LIST */
 /* Here flex is used so there aren't any invisible borders between list items */
 .nav-list {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 20px;
     font-size: 1.5em;
     display: flex;
@@ -125,7 +124,7 @@ nav {
 /* Menu for mobile */
 
 .icon-list-wrapper {
-    width: 30px;
+    width: 35px;
     height: 35px;
     padding: 10px;
     cursor: pointer;
@@ -175,8 +174,10 @@ nav {
 }
 
 .mission-article {
+    width: 40%;
     margin: 0 auto;
     padding: 20px;
+    display: inline-block;
 }
 
 .mission-image {
@@ -229,6 +230,7 @@ nav {
 
 .services-section {
     max-width: 1200px;
+    padding-bottom: 200px;
     margin: 0 auto;
 }
 
@@ -350,10 +352,6 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
 
 /* TESTIMONIALS SECTION */
 
-.testimonials-section {
-    margin-top: 200px;
-}
-
 .testimonials-article {
     min-height: 600px;
     background:
@@ -419,10 +417,23 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
 }
 
 .apply-info-container {
-    box-sizing: border-box;
-    text-align: center;
     padding: 40px;
     border: 2px solid #333;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+}
+
+.apply-info-container::after {
+    width: 48px;
+    height: 52px;
+    background: url("../images/home-page/conversation-pointer.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 483px;
+    top: 149px;
+    content: '';
 }
 
 .apply-title {

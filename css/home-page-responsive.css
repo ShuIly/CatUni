@@ -1,42 +1,6 @@
 
-/* For medium to large screens only */
-@media screen and (min-width: 1025px){
-
-    /* Fixes bug where rotating screen keeps nav 100vh */
-    .nav-stretch {
-        height: 110px;
-        box-shadow: 0 0 44px rgba(0, 0, 0, .24);
-    }
-
-
-    /* Sublist becomes visible on hover. Else it toggles on click */
-    .home-item:hover .nav-sublist {
-        margin-top: 40px;
-        opacity: 1;
-        transition-delay: 0s;
-        pointer-events: auto;
-    }
-
-    /* Home icon rotate when hovered (not for mobile) */
-    .nav-item:hover .home-icon {
-        padding-left: 7px;
-        padding-right: 0;
-        transition-delay: 0s;
-        transform: rotate(180deg);
-    }
-}
-
-/* For medium screens and tablets */
+/* For large screens and tablets */
 @media screen and (max-width: 1259px) {
-
-    /* HEADER */
-
-    /* MISSION SECTION */
-
-    .mission-article {
-        width: 30%;
-        display: inline-block;
-    }
 
     /* SERVICES SECTION */
 
@@ -68,11 +32,39 @@
         background:
                 linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
                 url("../images/home-page/cat-fat-square-mobile.png") no-repeat center;
+        background-size: cover;
     }
 
 }
 
-/* For small screens and tablets */
+/* For medium screens and tablets */
+@media screen and (min-width: 1025px){
+
+    /* Fixes bug where rotating screen keeps nav 100vh */
+    .nav-stretch {
+        height: 100px;
+        box-shadow: 0 0 44px rgba(0, 0, 0, .24);
+    }
+
+
+    /* Sublist becomes visible on hover. Else it toggles on click */
+    .home-item:hover .nav-sublist {
+        margin-top: 40px;
+        opacity: 1;
+        transition-delay: 0s;
+        pointer-events: auto;
+    }
+
+    /* Home icon rotate when hovered (not for mobile) */
+    .nav-item:hover .home-icon {
+        padding-left: 7px;
+        padding-right: 0;
+        transition-delay: 0s;
+        transform: rotate(180deg);
+    }
+}
+
+/* For medium screens and tablets */
 @media screen and (max-width: 1024px) {
 
     /* HEADER */
@@ -103,7 +95,6 @@
         height: auto;
         display: block;
         pointer-events: auto;
-        font-size: 2.5em;
     }
 
     .mobile-link-hovered {
@@ -147,7 +138,7 @@
 
     .icon-list-wrapper {
         margin-right: 30px;
-        margin-top: 32px;
+        margin-top: 25px;
     }
 
     .icon {
@@ -177,41 +168,12 @@
 
     /* SERVICES SECTION */
 
-    .services-section .services-article {
+    .services-article:nth-child(4) {
         background-size: contain;
     }
 }
 
-/* Only for screens larger than 1023px */
-@media screen and (min-width: 1024px) {
-
-    /* MISSION SECTION */
-
-    .mission-article {
-        display: inline-block;
-        width: 40%;
-    }
-
-    /*APPLY SECTION*/
-
-    .apply-info-container {
-        position: absolute;
-        top: 30px;
-    }
-
-    .apply-info-container::after {
-        width: 48px;
-        height: 52px;
-        background: url("../images/home-page/conversation-pointer.png") no-repeat center;
-        background-size: contain;
-        position: absolute;
-        left: 483px;
-        top: 179px;
-        content: '';
-    }
-}
-
-/* For medium screen smartphones */
+/* For medium screens and tablets */
 @media screen and (max-width: 1023px) {
 
     /* MISSION SECTION */
@@ -221,7 +183,6 @@
         margin: 0 auto;
         display: block;
     }
-
 
     /* SERVICES SECTION */
 
@@ -241,30 +202,20 @@
     }
 
     .apply-info-container::after {
-        width: 48px;
-        height: 52px;
-        background: url("../images/home-page/conversation-pointer.png") no-repeat center;
-        background-size: contain;
-        position: absolute;
+        content: '';
         left: 69%;
         top: 97%;
-        content: '';
         transform: rotate(90deg);
     }
-
 }
 
-/* For small screen smartphones */
-@media screen and (max-width: 600px) {
+/* For small screens, tablets and smartphones */
+@media screen and (max-width: 736px) {
 
     /* NAV */
 
     nav {
         height: 79px;
-    }
-
-    .switch-mobile {
-        font-size: 2em;
     }
 
     /* BODY */
@@ -280,7 +231,9 @@
     }
 
     .icon-list-wrapper {
-        margin-top: 22px;
+        width: 25px;
+        height: 25px;
+        margin-top: 17px;
     }
     
     .title-container {
@@ -323,6 +276,7 @@
     }
 
     .quote-container {
+        max-width: 300px;
         margin: 0 20px 20px;
         top: auto;
         bottom: 5%;
