@@ -86,6 +86,11 @@ footer {
     background: url("../images/home-page/footer-sprites.jpg") 50px 0;
 }
 
+/* Footer icon transition */
+.social-media-icon {
+    transition: all .4s;
+}
+
 @media screen and (max-width: 736px) {
 
     /* FOOTER */

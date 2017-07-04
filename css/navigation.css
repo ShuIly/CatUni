@@ -99,19 +99,22 @@ img {
 
 /* Menu for mobile */
 
-.icon-list-wrapper {
+.nav-icon-wrapper {
     width: 35px;
     height: 35px;
     padding: 10px;
     cursor: pointer;
 }
 
-.icon {
+#nav-icon {
     font-size: 2.5em;
+}
+
+.nav-icon-wrapper {
     display: none;
 }
 
-.icon::before {
+#nav-icon::before {
     content: "\f0c9";
 }
 
@@ -270,12 +273,12 @@ nav {
         width: 20%;
     }
 
-    .icon-list-wrapper {
+    .nav-icon-wrapper {
         margin-right: 30px;
         margin-top: 25px;
     }
 
-    .icon {
+    .nav-icon-wrapper {
         display: block;
     }
 
@@ -314,7 +317,7 @@ nav {
         width: 200px;
     }
 
-    .icon-list-wrapper {
+    .nav-icon-wrapper {
         width: 25px;
         height: 25px;
         margin-top: 17px;
