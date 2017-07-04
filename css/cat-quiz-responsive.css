@@ -1,0 +1,10 @@
+
+/* For small screens, tablets and smartphones */
+@media screen and (max-width: 736px) {
+
+    /* BODY */
+
+    body {
+        font-size: 11px;
+    }
+}
