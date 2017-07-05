@@ -1,6 +1,7 @@
 /* For now animation-type css is mixed in here. I'm too lazy to move it to a different file right now */
 
 @import url(https://fonts.googleapis.com/css?family=Abel);
+@import url('https://fonts.googleapis.com/css?family=Ewert');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 * {
@@ -21,122 +22,14 @@ img {
 /* HEADER */
 
 header {
-    padding-top: 40vh;
-    height: 60vh;
+    height: 100vh;
     max-height: 800px;
     background: url("../images/home-page/glasses-cat-matrix.jpg") no-repeat center;
     background-size: cover;
     position: relative;
-}
-
-nav {
-    width: 100%;
-    height: 100px;
-    background: rgba(239, 239, 239, 0.96);
-    box-shadow: 0 0 44px rgba(0, 0, 0, .24);
-    opacity: 1;
-    z-index: 999;
-    position: fixed;
-}
-
-.nav-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
-}
-
-.logo-wrapper {
-    width: 260px;
-    display: inline-block;
-}
-
-.nav-logo {
-    max-width: 100%;
-}
-
-/* UNORDERED LIST */
-/* Here flex is used so there aren't any invisible borders between list items */
-.nav-list {
-    margin-top: 20px;
-    margin-right: 20px;
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.nav-item {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.home-item {
-    cursor: pointer;
-    outline: none;
-}
-
-.nav-item-link {
-    padding: 20px;
-    color: #000;
-    text-decoration: none;
-    display: block;
-    position: relative;
-}
-
-.home-icon {
-    padding-right: 7px;
-}
-
-/* HOME SUBLIST */
-/* Added invisible border below Home so hover can get transfered to sublist */
-.home-item:hover::after {
-    content: " ";
-    position: absolute;
-    width: 30%;
-    height: 60px;
-    background: transparent;
-}
-
-.nav-sublist {
-    padding: 40px 0;
-    opacity: 0;
-    margin-top: 60px;
-    background-color: rgba(239, 239, 239, 0.9);
-    box-shadow: 0 0 84px rgba(0, 0, 0, .24);
-    pointer-events: none;
-    position: absolute;
-}
-
-.nav-subitem {
-    padding: 0 40px;
-    list-style-type: none;
-}
-
-.nav-subitem-link {
-    padding: 10px;
-    color: #000;
-    text-decoration: none;
-    display: block;
-}
-
-/* Menu for mobile */
-
-.icon-list-wrapper {
-    width: 35px;
-    height: 35px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.icon {
-    font-size: 2.5em;
-    display: none;
-}
-
-.icon::before {
-    content: "\f0c9";
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Welcome title */
@@ -148,6 +41,7 @@ nav {
 }
 
 .welcome-title {
+    font-family: 'Ewert', 'Abel', sans-serif;
     font-size: 4em;
     font-weight: 300;
     text-shadow: 0 0 30px rgb(229, 224, 221);
@@ -404,7 +298,7 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
 /* APPLY SECTION */
 
 .apply-section {
-    padding-top: 20%;
+    padding-top: 15em;
     background: linear-gradient(rgba(229, 224, 221, 0.1), rgba(229, 224, 221, 0.5));
     overflow: auto;
 }
@@ -461,92 +355,4 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
 .apply-image {
     width: 50%;
     float: right;
-}
-
-/* FOOTER */
-
-footer {
-    background: #333;
-    overflow: auto;
-    color: #fff;
-}
-
-.footer-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.copyright {
-    font-size: 2em;
-    display: inline-block;
-    line-height: 70px;
-    text-transform: uppercase;
-    margin-left: 20px;
-}
-
-.copyright::before {
-    content: '\00a9';
-    margin-right: 10px;
-}
-
-.footer-list {
-    margin-right: 10px;
-    float: right;
-}
-
-.footer-list-item {
-    margin: 10px;
-    list-style-type: none;
-    display: inline-block;
-}
-
-.footer-item-link {
-    width: 49px;
-    display: block;
-}
-
-.social-media-icon {
-    width: 49px;
-    height: 49px;
-    border-radius: 10px;
-}
-
-.facebook-icon {
-    background: url("../images/home-page/footer-sprites.jpg") 0 50px;
-}
-
-.facebook-icon:hover {
-    background: url("../images/home-page/footer-sprites.jpg") 0 0;
-}
-
-.twitter-icon {
-    background: url("../images/home-page/footer-sprites.jpg") 300px 50px;
-}
-
-.twitter-icon:hover {
-    background: url("../images/home-page/footer-sprites.jpg") 300px 0;
-}
-
-.linkedin-icon {
-    background: url("../images/home-page/footer-sprites.jpg") 150px 50px;
-}
-
-.linkedin-icon:hover {
-    background: url("../images/home-page/footer-sprites.jpg") 150px 0;
-}
-
-.tumblr-icon {
-     background: url("../images/home-page/footer-sprites.jpg") 100px 50px;
-}
-
-.tumblr-icon:hover {
-    background: url("../images/home-page/footer-sprites.jpg") 100px 0;
-}
-
-.google-icon {
-    background: url("../images/home-page/footer-sprites.jpg") 50px 50px;
-}
-
-.google-icon:hover {
-    background: url("../images/home-page/footer-sprites.jpg") 50px 0;
 }

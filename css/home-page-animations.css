@@ -1,58 +1,3 @@
-/* NAV animation */
-
-nav {
-    transition: all .6s ease;
-}
-
-/* Link border transition */
-.nav-item-link {
-    transition: all .3s;
-}
-
-/* Border and color transition */
-.nav-item > .nav-item-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
-    margin: 0 auto;
-    height: 2px;
-    background: #000000;
-    transition: all .3s;
-}
-
-.nav-item-link:hover::after {
-    width: 100%;
-}
-
-.home-icon {
-    transition: 0.3s 0.5s;
-}
-
-.nav-list {
-    transition: all .3s .1s ease;
-}
-
-/* Sublist transition */
-.nav-sublist {
-    transition: 0.5s 0.5s;
-}
-
-/* Sublist items transition */
-.nav-subitem {
-    transition: all .3s ease, background .0s;
-}
-
-.nav-subitem:hover {
-    font-size: 1.1em;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.nav-subitem:hover .nav-subitem-link {
-    color: #ffffff;
-}
 
 /* Services article transition */
 .services-article {
@@ -117,9 +62,4 @@ nav {
     border: 1px solid #000;
     box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-}
-
-/* Footer icon transition */
-.social-media-icon {
-    transition: all .4s;
 }
