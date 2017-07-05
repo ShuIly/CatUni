@@ -9,6 +9,11 @@
     padding: 0;
 }
 
+::selection {
+    background: #000000;
+    color: #ffffff;
+}
+
 body {
     font-size: 14px;
     font-family: 'Abel', sans-serif;
@@ -40,14 +45,13 @@ header {
     text-align: center;
 }
 
-.welcome-title {
+.header-title {
     font-family: 'Ewert', 'Abel', sans-serif;
     font-size: 4em;
     font-weight: 300;
-    text-shadow: 0 0 30px rgb(229, 224, 221);
 }
 
-.welcome-subtitle {
+.header-subtitle {
     font-size: 2.5em;
     font-weight: 300;
     text-shadow: 0 0 30px rgb(229, 224, 221);
