@@ -7,9 +7,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #e1d7d5;
 	font-family: 'Abel', sans-serif;
-	font-size: 14px;
+	font-size: 17px;
 	color: #1d1d1d;
 }
 h1, h2 {
@@ -29,7 +28,7 @@ p{
 }
 #wrapper {
 	overflow: hidden;
-	background: #F1F2E9;
+	background: #e0d9e0;
 }
 .container {
 	width: 1200px;
