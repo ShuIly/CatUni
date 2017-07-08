@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Abel', sans-serif;
+	font-size: 17px;
+	color: #1d1d1d;
+}
+h1, h2 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #7c6382;
+}
+h2 {
+	font-size: 2.8em;
+}
+
+p{
+	margin-top: 0;
+	line-height: 180%;
+}
+#wrapper {
+	overflow: hidden;
+	background: #e0d9e0;
+}
+.container {
+	width: 1200px;
+	margin: 0px auto;
+}
+#logo {
+	overflow: hidden;
+	height: 320px;
+}
+
+#logo h1, #logo p {
+	text-align: center;
+}
+
+#logo h1 {
+  padding: 50px 0px 0px 0px;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  font-size: 65px;
+}
+
+#logo p {
+	margin-top: 50px;
+	padding: 0px 0px 0px 5px;
+	font-size: 30px;
+	font-weight: 300;
+	color: #2f2645;
+}
+#page {
+	overflow: hidden;
+	padding: 20px 20px 40px 20px;
+  text-align: center;
+  font-size: 30px;
+}
+#content {
+	float: left;
+	width: 752px;
+	padding: 0px 0px 0px 0px;
+}
+#three-column {
+	overflow: hidden;
+	padding: 40px 0px 140px 0px;
+}
+
+#three-column .tbox1 {
+	float: left;
+	width: 384px;
+	margin-right: 20px;
+}
+
+#three-column .tbox2 {
+	float: left;
+	width: 384px;
+}
+
+#three-column .tbox3 {
+	float: right;
+	width: 384px;
+}
+
+.box-style {
+	background: #FFFFFF;
+	text-align: center;
+}
+.box-style h2 {
+	padding: 10px 0px;
+	letter-spacing: -1px;
+	font-size: 22px;
+	color: #2D2D2D;
+}
+
+.box-style .image {
+	width: 324px;
+}
+
+.box-style .content {
+	overflow: hidden;
+	width: 324px;
+	padding: 30px;
+}
