@@ -53,10 +53,15 @@ header {
 
 /* MAIN */
 
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* FORM */
 
 #cat-type-form {
-    margin: 15em auto;
+    margin: 150px auto;
 }
 
 .form-question-container {
@@ -76,6 +81,7 @@ div.form-answer-container {
     padding: 20px;
     background:
             linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    text-align: center;
 }
 
 .form-question-container:first-of-type {
@@ -127,44 +133,132 @@ div.form-answer-container {
     text-align: center;
 }
 
-.form-question-answer {
+.form-question-button {
     width: 60%;
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 10px 20px;
     margin: 0 auto 10px;
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid #000;
     outline: none;
     display: block;
+    cursor: pointer;
+    transition: all .2s ease;
 }
 
-.form-question-answer:hover {
-    background: #333;
+.form-question-radio {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.form-question-button:hover {
+    /*background: #333;
     color: #fff;
-    border: 1px solid #000;
-    box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    border: 1px solid #000;*/
+    background: rgba(230, 230, 230, 0.8);
     cursor: pointer;
 }
 
-.btn-container {
-    margin-top: 100px;
+.form-question-radio:checked + .form-question-button{
+    background: #333;
+    color: #fff;
+    border: 1px solid #000;
 }
 
-.submit-btn {
+.form-question-radio:checked + .form-question-button:hover {
+    background: rgba(51, 51, 51, 0.8);
+}
+
+.result-btn-container {
+    margin: 150px auto;
+}
+
+.result-btn {
     width: 200px;
     margin: 0 auto;
     font-size: 2em;
     padding: 10px 20px;
     background: #F4F4F4;
-    border: 1px solid #000;
+    color: #000;
+    border: 1px solid #333;
     outline: none;
     display: block;
+    transition: all .2s ease;
 }
 
-.submit-btn:hover {
-    background: #333;
+.result-btn:hover {
     color: #fff;
+    background: #333;
     border: 1px solid #000;
-    box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.form-result {
+    max-width: 650px;
+    margin: 0 auto;
+    z-index: 500;
+    box-shadow: 5px 5px 22px 4px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    top: 18%;
+}
+
+.result-background-container {
+    background: url("../images/cat-quiz/british-shorthair.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 460px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.result-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
+    right: 5%;
+}
+
+.result-title-container {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    padding: 10px 0;
+    text-align: center;
+}
+
+.result-anticipation {
+    font-size: 1.5em;
+}
+
+.result-title {
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.result-info {
+    max-width: 550px;
+    font-size: 1.5em;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+}
+
+.accept-btn-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.accept-btn {
+    font-size: 1.5em;
+    padding: 5px 20px;
+    border: 1px solid #333;
+    background: #D6D5D4;
+}
+
+.accept-btn:hover {
+    color: #fff;
+    background: #333;
+    border: 1px solid #fff;
     cursor: pointer;
 }
