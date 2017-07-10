@@ -75,7 +75,7 @@ main {
     background-size: contain;
 }
 
-div.form-answer-container {
+.form-answer-container {
     width: 80%;
     margin-bottom: 20px;
     padding: 20px;
@@ -133,6 +133,14 @@ div.form-answer-container {
     text-align: center;
 }
 
+/* Radio buttons are hidden and only for functionality */
+.form-question-radio {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+/* Labels for choosing */
 .form-question-button {
     width: 60%;
     font-size: 1.5em;
@@ -146,23 +154,19 @@ div.form-answer-container {
     transition: all .2s ease;
 }
 
-.form-question-radio {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-}
-
 .form-question-button:hover {
     background: rgba(230, 230, 230, 0.8);
     cursor: pointer;
 }
 
+/* Checked radio buttons have coloured labels */
 .form-question-radio:checked + .form-question-button{
     background: #333;
     color: #fff;
     border: 1px solid #000;
 }
 
+/* Just an added effect when hovering on a checked radio's label */
 .form-question-radio:checked + .form-question-button:hover {
     background: rgba(51, 51, 51, 0.8);
 }
@@ -171,6 +175,7 @@ div.form-answer-container {
     margin: 150px auto;
 }
 
+/* Clicking on it shows the form result */
 .result-btn {
     width: 200px;
     margin: 0 auto;
@@ -191,22 +196,31 @@ div.form-answer-container {
     cursor: pointer;
 }
 
+/* Form result is fixed and in middle of screen but invisible */
 .form-result {
-    max-width: 650px;
+    /*max-width: 650px;
     max-height: 520px;
-    margin: 0 auto;
+    margin: 0 auto;*/
     z-index: 500;
     box-shadow: 5px 5px 22px 4px rgba(0, 0, 0, 0.3);
-    position: fixed;
+    /*position: fixed;
     left: 10%;
     right: 10%;
-    top: 15%;
-    bottom: 2%;
+    top: 18%;
+    bottom: 2%;*/
+    position: fixed;
+    width: 650px;
+    height: 520px;
+    top: 50%;
+    left: 50%;
+    margin-top: -260px; /* Negative half of height. */
+    margin-left: -325px; /* Negative half of width. */
     opacity: 0;
     pointer-events: none;
     transition: all .5s ease;
 }
 
+/* When clicking on Result btn */
 .form-result.show-result {
     opacity: 1;
     pointer-events: auto;
@@ -222,9 +236,10 @@ div.form-answer-container {
     box-sizing: border-box;
 }
 
+/* Used so button and text are at bottom of Result */
 .result-bottom {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     left: 5%;
     right: 5%;
 }
@@ -253,7 +268,7 @@ div.form-answer-container {
 }
 
 .accept-btn-container {
-    margin-top: 20px;
+    margin-top: 5px;
     text-align: center;
 }
 
