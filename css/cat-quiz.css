@@ -198,19 +198,11 @@ main {
 
 /* Form result is fixed and in middle of screen but invisible */
 .form-result {
-    /*max-width: 650px;
-    max-height: 520px;
-    margin: 0 auto;*/
-    z-index: 500;
-    box-shadow: 5px 5px 22px 4px rgba(0, 0, 0, 0.3);
-    /*position: fixed;
-    left: 10%;
-    right: 10%;
-    top: 18%;
-    bottom: 2%;*/
-    position: fixed;
     width: 650px;
     height: 520px;
+    z-index: 500;
+    box-shadow: 5px 5px 22px 4px rgba(0, 0, 0, 0.3);
+    position: fixed;
     top: 50%;
     left: 50%;
     margin-top: -260px; /* Negative half of height. */
@@ -224,6 +216,7 @@ main {
 .form-result.show-result {
     opacity: 1;
     pointer-events: auto;
+    border: 1px solid #333;
 }
 
 .result-background-container {
@@ -277,6 +270,7 @@ main {
     padding: 5px 20px;
     border: 1px solid #333;
     background: #D6D5D4;
+    transition: all .2s ease;
 }
 
 .accept-btn:hover {
