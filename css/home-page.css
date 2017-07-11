@@ -189,7 +189,6 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
     font-size: 1.5em;
     padding-top: 10px;
     padding-right: 10px;
-    opacity: 0;
     color: #000;
     position: absolute;
     right: 10px;
@@ -197,6 +196,7 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
     text-decoration: none;
     pointer-events: none;
     transition: all .3s .1s ease;
+    opacity: 0;
 }
 
 /* Read more transition */
@@ -390,16 +390,18 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
     text-align: center;
 }
 
-.apply-btn {
-    font-size: 1.2em;
+.apply-link {
+    font-size: 1.3em;
     padding: 10px 20px;
+    color: #000;
     border: 1px solid #000;
     background: none;
     outline: none;
     transition: all .3s;
+    text-decoration: none;
 }
 
-.apply-btn:hover {
+.apply-link:hover {
     background: #333;
     color: #fff;
     border: 1px solid #000;

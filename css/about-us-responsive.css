@@ -1,5 +1,10 @@
 @media screen and (max-width: 736px) {
 
+    /* NAVIGATION */
+    nav {
+        font-size: 11px;
+    }
+
     /* PARTICIPANTS SECTION */
 
     .participant-article {

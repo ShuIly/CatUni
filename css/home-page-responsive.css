@@ -45,6 +45,11 @@
     .services-article:nth-child(4) {
         background-size: contain;
     }
+
+    /* No need for transition for links on mobile */
+    .apply-link {
+        transition: none;
+    }
 }
 
 /* For medium screens and tablets */

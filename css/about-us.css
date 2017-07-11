@@ -7,6 +7,12 @@
 	padding: 0;
 }
 
+::selection {
+	background: #000000;
+	color: #ffffff;
+	text-shadow: none;
+}
+
 body {
 	font-family: 'Abel', sans-serif;
 	font-size: 14px;
@@ -51,7 +57,6 @@ main {
 	max-width: 1400px;
 	margin: 0 auto;
 	text-align: center;
-	transition: all .5s ease;
 }
 
 .participant-article {
@@ -63,12 +68,13 @@ main {
 	overflow: hidden;
 	vertical-align: top;
 	display: inline-block;
-	transition: all .5s ease;
+	transition: all .5s .3s ease;
 }
 
 .participant-article:hover {
 	padding-bottom: 130px;
 	box-shadow: 5px 5px 80px 10px rgba(0, 0, 0, .2);
+	transition-delay: 0s;
 }
 
 .participant-image-container {
