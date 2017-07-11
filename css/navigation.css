@@ -251,7 +251,8 @@ nav {
         transition-delay: 0s;
         opacity: 1;
         visibility: visible;
-        background: linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2));
+        background:
+            linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2));
     }
 
     .nav-sublist {
