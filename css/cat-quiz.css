@@ -208,14 +208,14 @@ main {
     margin-top: -260px; /* Negative half of height. */
     margin-left: -325px; /* Negative half of width. */
     opacity: 0;
-    pointer-events: none;
+    visibility: hidden;
     transition: all .5s ease;
 }
 
 /* When clicking on Result btn */
 .form-result.show-result {
     opacity: 1;
-    pointer-events: auto;
+    visibility: visible;
     border: 1px solid #333;
 }
 

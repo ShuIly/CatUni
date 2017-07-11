@@ -194,7 +194,7 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
     right: 10px;
     bottom: 10%;
     text-decoration: none;
-    pointer-events: none;
+    visibility: hidden;
     transition: all .3s .1s ease;
     opacity: 0;
 }
@@ -219,7 +219,7 @@ linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
 
 .services-article:hover .read-more {
     opacity: 1;
-    pointer-events: auto;
+    visibility: visible;
 }
 
 /* FIRST SERVICES ARTICLE */

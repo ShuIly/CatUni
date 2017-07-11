@@ -81,7 +81,7 @@ img {
     margin-top: 60px;
     background-color: rgba(239, 239, 239, 0.9);
     box-shadow: 0 0 84px rgba(0, 0, 0, .24);
-    pointer-events: none;
+    visibility: hidden;
     position: absolute;
 }
 
@@ -187,9 +187,9 @@ nav {
     /* Sublist becomes visible on hover. Else it toggles on click */
     .home-item:hover .nav-sublist {
         margin-top: 40px;
-        opacity: 1;
         transition-delay: 0s;
-        pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
     }
 
     /* Home icon rotate when hovered (not for mobile) */
@@ -248,9 +248,9 @@ nav {
 
     .nav-sublist.toggle-sublist {
         max-height: 190px;
-        opacity: 1;
         transition-delay: 0s;
-        pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
         background: linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2));
     }
 
