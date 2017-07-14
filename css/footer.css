@@ -90,7 +90,6 @@ footer {
 @media screen and (max-width: 736px) {
 
     /* FOOTER */
-
     .footer-list {
         display: none;
     }

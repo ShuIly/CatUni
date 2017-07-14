@@ -17,22 +17,22 @@
 
     /* FORM RESULT */
 
-.form-result {
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-    left: 10%;
-    right: 10%;
-    top: 15%;
-    bottom: 5%;
-}
+    .form-result {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        left: 10%;
+        right: 10%;
+        top: 15%;
+        bottom: 5%;
+    }
 
-.result-background-container {
-background: url("../images/cat-quiz/british-shorthair-mobile.jpg") no-repeat center;
-background-size: cover;
-}
+    .result-background-container {
+        background: url("../images/cat-quiz/british-shorthair-mobile.jpg") no-repeat center;
+        background-size: cover;
+    }
 
-.result-info {
-font-size: 1.3em;
-}
+    .result-info {
+        font-size: 1.3em;
+    }
 }
