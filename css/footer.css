@@ -11,7 +11,7 @@ footer {
     margin: 0 auto;
 }
 
-.copyright {
+#copyright {
     font-size: 2em;
     display: inline-block;
     line-height: 70px;
@@ -19,7 +19,7 @@ footer {
     margin-left: 20px;
 }
 
-.copyright::before {
+#copyright::before {
     content: '\00a9';
     margin-right: 10px;
 }
@@ -44,51 +44,47 @@ footer {
     width: 49px;
     height: 49px;
     border-radius: 10px;
+    transition: all .4s;
 }
 
-.facebook-icon {
+#facebook-icon {
     background: url("../images/footer-sprites.jpg") 0 50px;
 }
 
-.facebook-icon:hover {
+#facebook-icon:hover {
     background: url("../images/footer-sprites.jpg") 0 0;
 }
 
-.twitter-icon {
+#twitter-icon {
     background: url("../images/footer-sprites.jpg") 300px 50px;
 }
 
-.twitter-icon:hover {
+#twitter-icon:hover {
     background: url("../images/footer-sprites.jpg") 300px 0;
 }
 
-.linkedin-icon {
+#linkedin-icon {
     background: url("../images/footer-sprites.jpg") 150px 50px;
 }
 
-.linkedin-icon:hover {
+#linkedin-icon:hover {
     background: url("../images/footer-sprites.jpg") 150px 0;
 }
 
-.tumblr-icon {
+#tumblr-icon {
     background: url("../images/footer-sprites.jpg") 100px 50px;
 }
 
-.tumblr-icon:hover {
+#tumblr-icon:hover {
     background: url("../images/footer-sprites.jpg") 100px 0;
 }
 
-.google-icon {
+#google-icon {
     background: url("../images/footer-sprites.jpg") 50px 50px;
 }
 
-.google-icon:hover {
+#google-icon:hover {
     background: url("../images/footer-sprites.jpg") 50px 0;
-}
-
-/* Footer icon transition */
-.social-media-icon {
-    transition: all .4s;
 }
 
 @media screen and (max-width: 736px) {
@@ -99,7 +95,7 @@ footer {
         display: none;
     }
 
-    .copyright {
+    #copyright {
         font-size: 1.5em;
         line-height: 40px;
     }
