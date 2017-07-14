@@ -15,7 +15,7 @@ img {
     transform: translateZ(0);
 }
 
-.nav-wrapper {
+#nav-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -23,7 +23,7 @@ img {
     justify-content: space-between;
 }
 
-.logo-wrapper {
+#logo-wrapper {
     width: 260px;
     display: inline-block;
 }
@@ -99,7 +99,7 @@ img {
 
 /* Menu for mobile */
 
-.nav-icon-wrapper {
+#nav-icon-wrapper {
     width: 35px;
     height: 35px;
     padding: 10px;
@@ -110,7 +110,7 @@ img {
     font-size: 2.5em;
 }
 
-.nav-icon-wrapper {
+#nav-icon-wrapper {
     display: none;
 }
 
@@ -274,12 +274,12 @@ nav {
         width: 20%;
     }
 
-    .nav-icon-wrapper {
+    #nav-icon-wrapper {
         margin-right: 30px;
         margin-top: 25px;
     }
 
-    .nav-icon-wrapper {
+    #nav-icon-wrapper {
         display: block;
     }
 
@@ -314,11 +314,11 @@ nav {
         height: 79px;
     }
 
-    .logo-wrapper {
+    #logo-wrapper {
         width: 200px;
     }
 
-    .nav-icon-wrapper {
+    #nav-icon-wrapper {
         width: 25px;
         height: 25px;
         margin-top: 17px;

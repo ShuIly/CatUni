@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("div.nav-icon-wrapper").click(function () {
+    $("div#nav-icon-wrapper").click(function () {
         $("nav").toggleClass("nav-stretch");
         $("ul.nav-list").toggleClass("switch-mobile");
         $("ul.nav-sublist").removeClass("toggle-sublist");
