@@ -6,7 +6,7 @@ A Softuni Web Fundamentals Project (https://softuni.bg/)
 2. CSS
 3. JavaScript (JQuery)
 ### To view from GitHub Pages
-https://shuily.github.io/team-lime/
+https://shuily.github.io/CatUni/
 ### To view locally:
 1. open Git
 2. clone repository
