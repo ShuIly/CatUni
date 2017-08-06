@@ -1,5 +1,4 @@
-# Team-Lime
-## Welcome to Catuni
+# Welcome to Catuni
 A Softuni Web Fundamentals Project (https://softuni.bg/)
 ### Languages used:
 1. HTML
@@ -10,5 +9,5 @@ https://shuily.github.io/CatUni/
 ### To view locally:
 1. open Git
 2. clone repository
-3. go to html/home-page.html
+3. go to index.html
 4. open in Chrome or any other browser.
