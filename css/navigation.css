@@ -2,13 +2,10 @@
 
 nav {
     width: 100%;
-    height: 100px;
     background: rgba(239, 239, 239, 0.96);
     box-shadow: 0 0 44px rgba(0, 0, 0, .24);
-    opacity: 1;
     z-index: 999;
     position: fixed;
-    transition: all .6s ease;
 }
 
 /* Blurriness gets removed from images */
@@ -39,7 +36,6 @@ img {
     margin-top: 20px;
     margin-right: 20px;
     font-size: 1.5em;
-    transition: all .3s .1s ease;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,6 +49,7 @@ img {
 .home-item {
     cursor: pointer;
     outline: none;
+    overflow: hidden;
 }
 
 .nav-item-link {
@@ -69,7 +66,7 @@ img {
 }
 
 /* Menu border animation */
-.nav-item > .nav-item-link::after {
+.nav-item-link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -99,7 +96,6 @@ img {
 
 .nav-sublist {
     padding: 40px 0;
-    opacity: 0;
     margin-top: 60px;
     background-color: rgba(239, 239, 239, 0.9);
     box-shadow: 0 0 84px rgba(0, 0, 0, .24);
@@ -180,14 +176,14 @@ img {
 /* For medium screens and tablets */
 @media screen and (max-width: 1024px) {
 
-    /* NAV */
+    nav {
+        padding: 0;
+    }
 
     .nav-list {
         width: 100%;
         height: 0;
         font-size: 2em;
-        padding-top: 20px;
-        opacity: 0;
         visibility: hidden;
     }
 
@@ -197,12 +193,11 @@ img {
     }
 
     .nav-stretch {
-        height: 100vh;
         box-shadow: none;
     }
 
     .switch-mobile {
-        opacity: 1;
+        padding-top: 20px;
         height: auto;
         display: block;
         visibility: visible;
@@ -223,7 +218,6 @@ img {
     .nav-sublist.toggle-sublist {
         max-height: 190px;
         transition-delay: 0s;
-        opacity: 1;
         visibility: visible;
         background:
             linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2));
@@ -257,10 +251,6 @@ img {
         display: block;
     }
 
-    nav {
-        padding: 0;
-    }
-
     /* Border under list item doesn't show in mobile */
     .nav-item > .nav-item-link::after {
         display: none;
@@ -282,10 +272,8 @@ img {
 /* For small screens, tablets and smartphones */
 @media screen and (max-width: 736px) {
 
-    /* NAV */
-
     nav {
-        height: 79px;
+        font-size: 0.7em;
     }
 
     #logo-wrapper {
