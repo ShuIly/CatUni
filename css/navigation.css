@@ -272,10 +272,6 @@ img {
 /* For small screens, tablets and smartphones */
 @media screen and (max-width: 736px) {
 
-    nav {
-        font-size: 0.7em;
-    }
-
     #logo-wrapper {
         width: 200px;
     }
